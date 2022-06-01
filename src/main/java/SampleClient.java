@@ -54,7 +54,7 @@ public class SampleClient {
     	 Date birthdate=null;
     	 String firstName="";
     	 String lastName="";
-    	 for(int i=0;i<response.getEntry().size()-1;i++) {
+    	 for(int i=0;i<response.getEntry().size();i++) {
         	 pat=(Patient) response.getEntry().get(i).getResource();
         	 
         	 if(pat.getBirthDate()!=null) {
